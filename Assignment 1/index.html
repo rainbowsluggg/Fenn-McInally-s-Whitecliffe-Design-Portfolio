@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenn McInally - Design Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+    <!-- Link to Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Menu -->
+    <div id="start-menu">
+        <h1>FENN MCINALLY</h1>
+        <h2>DESIGN PORTFOLIO</h2>
+        <button id="play-btn">READY?</button>
+    </div>
+
+    <!-- Game Content -->
+    <div id="game-content" style="display: none;">
+    <!-- Top Navigation Bar -->
+    <nav id="top-navbar">
+      <div class="nav-title">FENN'S DESIGN PORTFOLIO</div>
+    </nav>
+
+        <h2>WHAT WOULD YOU LIKE TO SEE?</h2>
+        
+        <video id="eye-video" autoplay muted loop playsinline>
+            <source src="Eye.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div id="image-placeholder" style="display: none; margin-top: 20px;">
+            <img id="hover-image" src="" alt="Comics Image" style="max-width: 100%; height: auto;">
+        </div>
+        <div id="moving-words"></div> <!-- Container for moving words -->
+        <div id="price-display">Price: $0.00</div>
+        <footer>
+            <a href="index.html">Back to Home</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

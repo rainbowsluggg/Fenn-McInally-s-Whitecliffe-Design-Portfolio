@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Games</title>
+  <link rel="stylesheet" href="game-design.css" />
+  <!-- Link to Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id="game-design-page">
+    <h1>FENN'S GAMES</h1>
+    <p>Game design has always been a dream of Fenn's. He made his first game for his then-girlfriend, which was a short visual novel filled with artwork he had made for her.</p>
+    <p>His second game focused on the dark sides of OCD and overthinking, and he intends to make many more games in the future.</p>
+    <br><br>
+
+    <p>"Double Check" was a visual novel Fenn started making in highschool, but he never finished it.</p>
+    <br></br>
+    <p>Game Sprites from "Double Check"</p>
+
+    <div class="image-gallery">
+      <img src="Game sprite  (4).png" alt="Game Sprite 1" onclick="openLightbox(this)">
+      <img src="Game sprite  (2).png" alt="Game Sprite 1" onclick="openLightbox(this)">
+      <img src="Game sprite  (3).png" alt="Game Sprite 1" onclick="openLightbox(this)">
+      <img src="Game sprite  (5).png" alt="Game Sprite 1" onclick="openLightbox(this)">
+      <img src="Game sprite  (7).png" alt="Game Sprite 1" onclick="openLightbox(this)">
+      <img src="Game sprite  (8).png" alt="Game Sprite 1" onclick="openLightbox(this)">
+    </div>
+
+    <p>Game Backgrounds from "Double Check"</p>
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+      <img src="Game bgs (6).png" alt="BG 1" onclick="openLightbox(this)">
+      <img src="Game bgs (2).png" alt="BG 1" onclick="openLightbox(this)">
+      <img src="Game bgs (5).png" alt="BG 1" onclick="openLightbox(this)">
+      <img src="Game bgs (4).png" alt="BG 1" onclick="openLightbox(this)">
+      <img src="Game bgs (3).png" alt="BG 1" onclick="openLightbox(this)">
+      <img src="Game bgs (1).png" alt="BG 1" onclick="openLightbox(this)">
+    </div>
+
+    <p>Game Illustrations from "Double Check"</p>
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+      <img src="Game sections (3).png" alt="section 1" onclick="openLightbox(this)">
+      <img src="Game sections (2).png" alt="section 1" onclick="openLightbox(this)">
+      <img src="Game sections (4).png" alt="section 1" onclick="openLightbox(this)">
+      <img src="Game sections (1).png" alt="section 1" onclick="openLightbox(this)">
+      <img src="Game sections (5).png" alt="section 1" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Full view" />
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <footer>
+      <a href="index.html">Back to Home</a>
+    </footer>
+  </div>
+</body>
+</html>

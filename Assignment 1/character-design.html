@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Character Designs</title>
+  <link rel="stylesheet" href="character-design.css" />
+  <!-- Link to Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id="character-design-page">
+    <h1>FENN'S CHARACTER DESIGNS</h1>
+    <p>Whether it's characters for a D&D campaign, for a client, or for a comic, Fenn loves designing characters. Here are some of his favourites.</p>
+    <br><br>
+
+    <p>Character Design Sketches & Ideas</p>
+
+    <div class="image-gallery">
+      <img src="Character sketch 1.png" alt="CharDes 1" onclick="openLightbox(this)">
+      <img src="Character sketch 2.png" alt="CharDes 2" onclick="openLightbox(this)">
+      <img src="Character sketch 3.png" alt="CharDes 3" onclick="openLightbox(this)">
+      <img src="Character sketch 5.jpg" alt="CharDes 5" onclick="openLightbox(this)">
+      <img src="Character sketch 6.jpg" alt="CharDes 6" onclick="openLightbox(this)">
+      <img src="Character sketch 7.png" alt="CharDes 7" onclick="openLightbox(this)">
+    </div>
+
+    <p>Character Design Finals</p>
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+      <img src="Character design 1.png" alt="CharDes 1" onclick="openLightbox(this)">
+      <img src="Character design 2.png" alt="CharDes 2" onclick="openLightbox(this)">
+      <img src="Character design 3.png" alt="CharDes 3" onclick="openLightbox(this)">
+      <img src="Character design 7.jpg" alt="CharDes 7" onclick="openLightbox(this)">
+      <img src="Character design 8.png" alt="CharDes 8" onclick="openLightbox(this)">
+      <img src="Character design 9.jpg" alt="CharDes 9" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Full view" />
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <footer>
+      <a href="index.html">Back to Home</a>
+    </footer>
+  </div>
+</body>
+</html>

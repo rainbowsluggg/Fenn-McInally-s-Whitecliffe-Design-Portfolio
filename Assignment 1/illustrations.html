@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Illustrations</title>
+  <link rel="stylesheet" href="illustrations.css" />
+  <!-- Link to Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id="illustrations-page">
+    <h1>FENN'S ILLUSTRATIONS</h1>
+    <p>From sketches to final pieces, here are some of Fenn's all-time favourite illustrations.</p>
+
+    <!-- Video Gallery Section -->
+    <div class="video-gallery">
+      <video autoplay loop muted playsinline>
+        <source src="Illustrations 1.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+      <img src="illustrations 1.png" alt="Illustration 1" onclick="openLightbox(this)">
+      <img src="illustrations 4.jpg" alt="Illustration 4" onclick="openLightbox(this)">
+      <img src="illustrations 5.jpg" alt="Illustration 5" onclick="openLightbox(this)">
+      <img src="illustrations 2.png" alt="Illustration 2" onclick="openLightbox(this)">
+      <img src="illustrations 3.png" alt="Illustration 3" onclick="openLightbox(this)">
+      <img src="illustrations 6.png" alt="Illustration 6" onclick="openLightbox(this)">
+      <img src="illustrations 7.png" alt="Illustration 7" onclick="openLightbox(this)">
+      <img src="illustrations 8.jpg" alt="Illustration 8" onclick="openLightbox(this)">
+      <img src="illustrations 9.png" alt="Illustration 9" onclick="openLightbox(this)">
+      <img src="illustrations 12.png" alt="Illustration 12" onclick="openLightbox(this)">
+      <img src="illustrations 10.jpg" alt="Illustration 10" onclick="openLightbox(this)">
+      <img src="illustrations 11.jpg" alt="Illustration 11" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Full view" />
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <footer>
+      <a href="index.html">Back to Home</a>
+    </footer>
+  </div>
+</body>
+</html>

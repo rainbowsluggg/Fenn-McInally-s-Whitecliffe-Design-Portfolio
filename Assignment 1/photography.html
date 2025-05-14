@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photography</title>
+  <link rel="stylesheet" href="photography.css" />
+  <!-- Link to Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id="photography-page">
+    <h1>FENN'S PHOTOGRAPHY</h1>
+    <p>Call him narcissistic, but Fenn loves taking photos. Stealing the family camera to have photoshoots is just too much fun! Here are some of his past works.</p>
+
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+      <img src="Photography (1).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (4).jpg" alt="Photography 4" onclick="openLightbox(this)">
+      <img src="Photography (22).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (18).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (19).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (2).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (7).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (8).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (9).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (10).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (17).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (5).jpg" alt="Photography 5" onclick="openLightbox(this)">
+      <img src="Photography (20).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (11).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (12).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (13).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (15).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (16).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (3).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (21).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (23).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (24).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (25).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (26).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (28).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (29).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (30).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (14).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography (6).jpg" alt="Photography 1" onclick="openLightbox(this)">
+      <img src="Photography 31.jpg" alt="Photography 1" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Full view" />
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <footer>
+      <a href="index.html">Back to Home</a>
+    </footer>
+  </div>
+</body>
+</html>

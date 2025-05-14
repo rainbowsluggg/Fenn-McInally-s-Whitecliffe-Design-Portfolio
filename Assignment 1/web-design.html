@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Design</title>
+  <link rel="stylesheet" href="web-design.css" />
+  <!-- Link to Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id="web-design-page">
+    <h1>FENN'S WEBSITE DESIGNS</h1>
+    <p>Fenn used various coding platforms, including Visual Studio Code and Figma, to bring these webpages to you!</p>
+
+    <p>Fenn created the following webpage for a University project, with the idea of making a free mental health website, because most other MH platforms require payment.</p>
+
+    <!-- Video Gallery Section -->
+    <div class="video-gallery">
+      <video autoplay loop muted playsinline>
+        <source src="Webdesign 1.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <p>On this website, the pupil of the eyeball in the middle of the screen would follow your cursor, and when you click on it, it would bulge and give you an eye pun at the left of the screen.</p>
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+      <img src="web design 8ish.png" alt="Web des 2" onclick="openLightbox(this)">
+      <img src="web design.png" alt="Web des 1" onclick="openLightbox(this)">
+      <img src="web design 2.png" alt="Web des 2" onclick="openLightbox(this)">
+      <img src="web design 3.png" alt="Web des 2" onclick="openLightbox(this)">
+      <img src="web design 4.png" alt="Web des 2" onclick="openLightbox(this)">
+      <img src="web design 5.png" alt="Web des 2" onclick="openLightbox(this)">
+      <img src="web design 6.png" alt="Web des 2" onclick="openLightbox(this)">
+      <img src="web design 7.png" alt="Web des 2" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Full view" />
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <footer>
+      <a href="index.html">Back to Home</a>
+    </footer>
+  </div>
+</body>
+</html>

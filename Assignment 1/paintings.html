@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paintings</title>
+  <link rel="stylesheet" href="paintings.css" />
+  <!-- Link to Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id="illustrations-page">
+    <h1>FENN'S PAINTINGS</h1>
+    <p>One of Fenn's favourite ways to give gifts to his friends and family are through paintings!</p>
+    <p>Here are some of his past works:</p>
+    <br><br>
+
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+      <img src="Painting 1.PNG" alt="Painting 1" onclick="openLightbox(this)">
+      <img src="Painting 7.jpeg" alt="Painting 2" onclick="openLightbox(this)">
+      <img src="Painting 5.JPEG" alt="Painting 5" onclick="openLightbox(this)">
+      <img src="Painting 6.jpg" alt="Painting 4" onclick="openLightbox(this)">
+      <img src="Painting 9.jpg" alt="Painting 4" onclick="openLightbox(this)">
+      <img src="painting 12.jpg" alt="Painting 4" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Full view" />
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <footer>
+      <a href="index.html">Back to Home</a>
+    </footer>
+  </div>
+</body>
+</html>

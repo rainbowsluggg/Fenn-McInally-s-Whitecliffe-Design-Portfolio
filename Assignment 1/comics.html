@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comics</title>
+  <link rel="stylesheet" href="comics.css" />
+  <!-- Link to Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id="character-design-page">
+    <h1>FENN'S COMICS</h1>
+    <p>Fenn made his first comic when he was 12 years old. It was a Miraculous Ladybug fan comic that he made for his baby cousins - but also, for himself.</p>
+    <br><br>
+
+    <p>Comic Thumbnails & Sketches</p>
+
+    <div class="image-gallery">
+      <img src="Comic thumbnail 1.jpg" alt="Comic Sketch 1" onclick="openLightbox(this)">
+      <img src="Comic thumbnail 2.jpg" alt="Comic Sketch 2" onclick="openLightbox(this)">
+      <img src="Comic thumbnail 3.jpg" alt="Comic Sketch 3" onclick="openLightbox(this)">
+      <img src="Comic thumbnail 4.jpg" alt="Comic Sketch 4" onclick="openLightbox(this)">
+      <img src="Comic sketch 5.jpg" alt="Comic Sketch 5" onclick="openLightbox(this)">
+      <img src="Comic sketch 6.jpg" alt="Comic Sketch 6" onclick="openLightbox(this)">
+    </div>
+
+    <p>Comic Panels, Banners & Illustrations</p>
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+      <img src="Comic illus 1.jpg" alt="Comic 1" onclick="openLightbox(this)">
+      <img src="Comic panel 6.jpg" alt="Comic 6" onclick="openLightbox(this)">
+      <img src="Comic illus 2.png" alt="Comic 2" onclick="openLightbox(this)">
+      <img src="Comic illus 3.jpg" alt="Comic 3" onclick="openLightbox(this)">
+      <img src="Comic panel (1).png" alt="Comic 1" onclick="openLightbox(this)">
+      <img src="Comic panel (4).png" alt="Comic 4" onclick="openLightbox(this)">
+      <img src="Comic panel (5).png" alt="Comic 5" onclick="openLightbox(this)">
+      <img src="Comic panel (2).png" alt="Comic 2" onclick="openLightbox(this)">
+      <img src="Comic panel (3).png" alt="Comic 3" onclick="openLightbox(this)">
+      <img src="Comic sketch 7.png" alt="Comic Sketch 7" onclick="openLightbox(this)">
+      <img src="Comic panel 7.jpg" alt="Comic 7" onclick="openLightbox(this)">
+      <img src="Comic panel 8.png" alt="Comic 8" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Full view" />
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <footer>
+      <a href="index.html">Back to Home</a>
+    </footer>
+  </div>
+</body>
+</html>

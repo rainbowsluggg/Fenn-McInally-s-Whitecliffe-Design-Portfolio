@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zines</title>
+  <link rel="stylesheet" href="zines.css" />
+  <!-- Link to Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id="zines-page">
+    <h1>FENN'S ZINES</h1>
+    <p>Did you know? Fenn created his first - and only - zine in his Certificate class for Design & Digital Media at Whitecliffe!</p>
+    <p>It was called "Binary Bullshit," and it was a comedic take on common transphobic remarks that he had received before he was 18 years old.</p>
+    <br></br>
+
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+      <img src="Zine front cover (pg 1).jpg" alt="Zine" onclick="openLightbox(this)">
+      <img src="Zine inside cover (pg 2).jpg" alt="Zine" onclick="openLightbox(this)">
+      <img src="Zine page 3.jpg" alt="Zine" onclick="openLightbox(this)">
+      <img src="Zine page 4.jpg" alt="Zine" onclick="openLightbox(this)">
+      <img src="Zine page 5.jpg" alt="Zine" onclick="openLightbox(this)">
+      <img src="Zine page 6.jpg" alt="Zine" onclick="openLightbox(this)">
+      <img src="Zine page 7.jpg" alt="Zine" onclick="openLightbox(this)">
+      <img src="Zine page 8.jpg" alt="Zine" onclick="openLightbox(this)">
+      <img src="Zine page 9.jpg" alt="Zine" onclick="openLightbox(this)">
+      <img src="Zine page 10.jpg" alt="Zine" onclick="openLightbox(this)">
+      <img src="Zine page 11.jpg" alt="Zine" onclick="openLightbox(this)">
+      <img src="Zine back cover (pg 12).jpg" alt="Zine" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Full view" />
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <footer>
+      <a href="index.html">Back to Home</a>
+    </footer>
+  </div>
+</body>
+</html>

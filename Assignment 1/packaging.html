@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packaging Design</title>
+  <link rel="stylesheet" href="packaging.css" />
+  <!-- Link to Google Fonts for Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <div id="packaging-page">
+    <h1>FENN'S PACKAGING DESIGNS</h1>
+    <p>From freelance gigs to university projects, Fenn has had his fair share of packaging designs.</p>
+    <br></br>
+
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+      <img src="Packaging (4).png" alt="Logo" onclick="openLightbox(this)">
+      <img src="Packaging (5).png" alt="Logo" onclick="openLightbox(this)">
+      <img src="Packaging (6).png" alt="Logo" onclick="openLightbox(this)">
+      <img src="Packaging (3).png" alt="Logo" onclick="openLightbox(this)">
+      <img src="Packaging (2).png" alt="Logo" onclick="openLightbox(this)">
+      <img src="Packaging (1).png" alt="Logo" onclick="openLightbox(this)">
+      <img src="Packaging (7).png" alt="Logo" onclick="openLightbox(this)">
+      <img src="Packaging (8).png" alt="Logo" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="Full view" />
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <footer>
+      <a href="index.html">Back to Home</a>
+    </footer>
+  </div>
+</body>
+</html>
